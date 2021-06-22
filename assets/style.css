@@ -60,6 +60,10 @@ header {
   outline: none;
 
   background: #3f3fd47a;
+  color: whitesmoke;
+
+  font-size: 24px;
+  text-indent: 10px;
 }
 
 .form input[type="submit"] {
@@ -71,8 +75,14 @@ header {
   outline: none;
 
   background: #212196;
+  color: whitesmoke;
 
 }
+
+.form input[type="submit"]:active {
+  height: 42px;
+}
+
 
 .main {
   width: 100%;
@@ -102,7 +112,64 @@ header {
  
 }
 
-.list input {
-  margin: 5px;
+.list input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+ 
+}
+
+.list label {
   margin-left: auto;
 }
+
+.list button {
+  width: 10%;
+  height: 30px;
+
+  border-radius: 5px;
+  border: none;
+  outline: none;
+
+  background: #212196;
+  color: whitesmoke;
+}
+
+.list button:active {
+  height: 32px;
+}
+
+.list input[type="range"] {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 10px;
+
+  background: #212196 ;
+
+  outline: none;
+  border-radius: 2px;
+ 
+}
+
+.list input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+
+  background: url("./star-fill.svg") no-repeat center;
+
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* .list input[type="range"]::-moz-range-thumb {
+  width: 23px;
+  height: 25px;
+  border: 0;
+  background: whitesmoke;
+  cursor: pointer;
+} */
+
+
+
